@@ -1,0 +1,97 @@
+---
+title: "Ruiyang's Resume"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+
+# Ruiyang Wu
+50 Haven Ave, 10032, New York, NY  | C: 213-713-0261 | [rw3033@cumc.columbia.edu](rw3033@cumc.columbia.edu) |  [LinkedIn](https://www.linkedin.com/in/ruiyang-wu-0115/) |
+
+
+### EDUCATION                                                                   
+#### Columbia University			                                      	      
+New York, NY<br>
+Sep 2023 – May 2025 (Expected)<br>
+MPH in Biostatistics<br>
+GPA: 4.0<br>
+•	Gained comprehensive understanding of public health research methodologies, focusing on statistical computing, applied regression analysis, and decision analysis for clinical and public health practices.<br>
+•	Developed proficiency in integrating scientific theories with practical health systems applications, emphasizing statistical methods in SAS and categorical data analysis.	<br>
+
+#### University of Southern California			                               
+Los Angeles, CA<br>
+Sep 2020 – May 2023<br>
+BS in Applied Mathematics and Economics<br>
+•	Gained analytical skills in applied mathematics, with a focus on probability theory, mathematical statistics, biostatistics, and business statistics.<br>
+•	Advanced technical abilities in programming (Python), data analytics, and statistical software applications, preparing for data-driven decision-making in diverse sectors.<br>
+
+<br>
+
+### PROFESSIONAL EXPERIENCE                                                 
+#### Columbia University
+New York, US<br>
+Research Methods and Applications: Quantitative Foundations TA<br> 					
+Sep 2024 – Dec 2024<br>
+Summer Institute for Training in Biostatistics and Data Science Program 
+TA<br>
+May 2024 – Jun 2024<br>
+•	Facilitated discussion and lab sections, providing technical support and assisting students in understanding studio content.<br>
+•	Graded student assessments promptly, ensuring constructive feedback and adherence to predetermined deadlines.<br>
+•	Held weekly office hours and met with students as needed to address questions and provide academic support.<br>
+•	Collaborated with Studio Lead Teaching Assistants and faculty to develop and pre-test studio assessments.<br>
+
+#### Eli Lilly and Company	 		         		                
+Suzhou, China<br>
+Jun 2022 – Aug 2022<br>
+Analysts Intern<br>
+•	Implemented JMP statistical tools to refine the manufacturing process for better process monitoring and continuous improvement.<br>
+•	Assisted in pH monitoring, operational qualification control, and risk level intervention optimization; identified a critical issue with an abnormal product rejection rate and devised a data-driven analysis framework to facilitate root cause investigation and strategize potential solutions.<br>
+•	Supported qualification and study execution, including taking samples and data analysis for two of the leading insulin products Humulin and Humalog. Achieved a 5% increase in batch yield in manufacturing by optimizing pH levels during synthesis.<br>
+•	Contributed to the technical transfer processes by effectively translating and restructuring 18 essential quality control reports, ensuring meticulous and standard documentation.<br>
+
+<br>
+
+### RESEARCH EXPERIENCE 
+#### New York-Presbyterian Morgan Stanley Children’s Hospital	           
+New York, US<br>
+May 2024 – Aug 2024<br>
+Research Assistant Intern, Fernández Research Team<br>	
+•	Conducted a comprehensive literature review on social determinants of health screening and outcomes in newborn nurseries, identifying existing gaps in the field.<br>
+•	Identified gaps in research on maternal health and newborn outcomes pre-pandemic and during the pandemic, leading to a focused research effort on these areas.<br>
+•	Developed a project codebook and performed preliminary data analysis from 2023 data to investigate trends in prenatal maternal social determinants of health and mental health, and their associations with newborn birth and feeding outcomes.<br>
+•	Utilized biostatistical software for univariate and bivariate statistical analyses, focusing on identifying correlations and potential modifying effects of demographic characteristics on prenatal exposures and maternal outcomes.<br>
+•	Collaborated with the research team in biweekly meetings, presenting findings and progress, and ensuring data quality through meticulous cleaning and validation.<br>
+•	Prepared and presented a comprehensive report of preliminary results to pediatric and obstetric physicians and nursing staff on the postpartum patients using EPIC system, providing actionable insights for improving newborn care practices.<br>
+
+#### Soochow University			       		                
+Suzhou, China<br>
+Jun 2021 – Aug 2021<br>
+Research Assistant<br>
+•	Collected, analyzed, and processed clinical data for stroke patient studies using R, managing datasets comprising over 1000 patient records.<br>
+•	Determined optimal sample sizes and statistical test parameters, accounting for confounding, bias, and dropout rates to enhance study validity and reliability.<br>
+•	Investigated the association between stroke and rehospitalization rate using research methods including causal inference and mediation effects analysis, considering factors such as age, smoking, diet, syndrome, and medical history including diabetes and obesity.<br>
+•	Compiled comprehensive statistical reports, aiding in the preparation of research manuscripts for publication.<br>
+
+<br>
+
+### LEADERSHIP EXPERIENCE
+#### Columbia University Irving Medical Center Chinese Students and Scholars Association              
+New York, NY<br>
+Sep 2023 – May 2024<br>
+Vice President, Director of Public Relation Department<br>
+•	Service Chinese students and scholars at Columbia University Irving Medical Center and seeks to unite all Chinese community members in the community, promote Chinese culture, and enhance international communication.<br>
+•	Liaise with student groups, university staff, and external vendors to coordinate event logistics, including venue selection, catering, equipment rentals, and transportations.<br>
+•	Manage event budgets and secure funding through grant applications and sponsorships, including Columbia University International Students and Scholars Office and Consulate General of the People's Republic of China in New York, ensuring events are financially viable and cost-effective.<br>
+•	Serve as a representative of CSSA at university-wide events and engage with external organizations to identify and secure opportunities for student engagement.<br>
+
+<br>
+
+### SKILLS
+•	Programming Languages, Database tools, and Analytical Tools: SAS Certified Specialist: Base Programming Using SAS 9.4, Python, R, SQL, STATA<br>
+•	Business Intelligence Tools: MS Office, Tableau<br>
+
+
+
+

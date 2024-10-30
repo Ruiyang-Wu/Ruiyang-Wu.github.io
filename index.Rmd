@@ -1,0 +1,28 @@
+---
+title: "Hi! This is Ruiyang Wu"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+
+# Welcome my website
+This is me:
+![](1.jpg)
+
+
+This is my cat:
+![](2.jpg)
+
+
+And I love skiing:
+![](3.jpg)
+## Links about me:
+* [Github](https://github.com/Ruiyang-Wu)
+* [Email](rw3033@cumc.columbia.edu)
+* [LinkedIn](https://www.linkedin.com/in/ruiyang-wu-0115/)
+* [Resume](Resume.html)
+
+
+
