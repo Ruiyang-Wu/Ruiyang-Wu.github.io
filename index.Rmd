@@ -1,28 +1,37 @@
 ---
-title: "Hi! This is Ruiyang Wu"
+title: "Welcome to Ruiyang's website"
 output: 
   html_document:
     toc: true
     toc_float: true
-    theme: cerulean
 ---
 
-# Welcome my website
-This is me:
+<br/>
+
+## This is me
+Hi! This is Ruiyang Wu.<br/>
+I look like this:
 ![](1.jpg)
 
+<br/>
 
-This is my cat:
+This is my lovely cat Didi:
 ![](2.jpg)
+
+<br/>
 
 
 And I love skiing:
 ![](3.jpg)
-## Links about me:
-* [Github](https://github.com/Ruiyang-Wu)
-* [Email](rw3033@cumc.columbia.edu)
-* [LinkedIn](https://www.linkedin.com/in/ruiyang-wu-0115/)
-* [Resume](Resume.html)
+
+<br>
+
+## Links about me
+| [Github](https://github.com/Ruiyang-Wu)
+ | [Email](rw3033@cumc.columbia.edu)
+ | [LinkedIn](https://www.linkedin.com/in/ruiyang-wu-0115/)
+ | [Resume](Resume.html)
+ | 
 
 
 

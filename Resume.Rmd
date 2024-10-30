@@ -1,13 +1,11 @@
 ---
-title: "Ruiyang's Resume"
+title: "Ruiyang Wu"
 output: 
   html_document:
     toc: true
     toc_float: true
-    theme: cerulean
 ---
 
-# Ruiyang Wu
 50 Haven Ave, 10032, New York, NY  | C: 213-713-0261 | [rw3033@cumc.columbia.edu](rw3033@cumc.columbia.edu) |  [LinkedIn](https://www.linkedin.com/in/ruiyang-wu-0115/) |
 
 
