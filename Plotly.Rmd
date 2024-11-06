@@ -1,0 +1,93 @@
+---
+title: "Plotly"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+```{r}
+library(tidyverse)
+library(plotly)
+library(p8105.datasets)
+
+data("ny_noaa")
+
+ny_noaa = 
+  ny_noaa |> 
+  separate(date, into = c("year", "month", "day"), convert = TRUE) |> 
+  mutate(
+    tmax = as.numeric(tmax),
+    tmin = as.numeric(tmin),
+    prcp = as.numeric(prcp), 
+    year = as.factor(year)) |>
+  filter(id == "USC00303033")
+```
+
+### Scatter Plot: Maximum and Minimum temperatures recorded at Weather Station USC00303033
+
+This scatter plot visualizes the relationship between maximum and minimum temperatures recorded at Weather Station USC00303033. Each point represents a daily observation, with maximum temperature on the x-axis and minimum temperature on the y-axis, both measured in tenths of degrees Celsius. The color gradient indicates the amount of precipitation (in tenths of millimeters), with lighter colors signifying higher precipitation levels. This graph provides insights into how temperature extremes vary together on a daily basis and illustrates precipitation patterns in relation to these temperature ranges, potentially highlighting seasonal or environmental trends.
+
+```{r}
+plot_ly(data = ny_noaa,
+  x = ~tmax, y = ~tmin, type = "scatter", mode = "markers",
+  color = ~prcp, text = ~ny_noaa, alpha=0.5) |>
+  layout(
+    title = "Maximum and Minimum temperatures recorded at Weather Station USC00303033",
+    xaxis = list(title = "Maximum Temperature (tenths of degrees C)"),
+    yaxis = list(title = "Minimum Temperature (tenths of degrees C)")
+)
+```
+
+
+### Box Plot: Maximum temperature Distribution by Year at Weather Station USC00303033
+
+This box plot visualizes the distribution of maximum temperatures recorded each year at Weather Station USC00303033. Each box represents the range of maximum daily temperatures (measured in tenths of degrees Celsius) for a given year, with the median, interquartile range, and potential outliers indicated. The colors progress from purple to yellow, helping to distinguish each year visually. This plot provides insights into yearly temperature patterns, highlighting fluctuations in maximum temperatures over time and allowing for easy comparison across different years.
+
+```{r}
+plot_ly(data = ny_noaa,
+    y = ~tmax, color = ~year, type = "box", colors = "viridis"
+  ) |>
+  layout(
+    title = "Maximum temperature Distribution by Year at Weather Station USC00303033",
+    yaxis = list(title = "Maximum temperature (tenths of degrees C)"),
+    xaxis = list(title = "Year")
+)
+```
+
+
+### Box Plot: Minimum temperature Distribution by Year at Weather Station USC00303033
+
+This box plot visualizes the distribution of minimum temperatures recorded each year at Weather Station USC00303033. Each box represents the range of minimum daily temperatures (measured in tenths of degrees Celsius) for a given year, with the median, interquartile range, and potential outliers indicated. The colors progress from purple to yellow, helping to distinguish each year visually. This plot provides insights into yearly temperature patterns, highlighting fluctuations in minimum temperatures over time and allowing for easy comparison across different years.
+
+```{r}
+plot_ly(data = ny_noaa,
+    y = ~tmin, color = ~year, type = "box", colors = "viridis"
+  ) |>
+  layout(
+    title = "Minimum temperature Distribution by Year at Weather Station USC00303033",
+    yaxis = list(title = "Minimum temperature (tenths of degrees C)"),
+    xaxis = list(title = "Year")
+)
+```
+
+
+### Count of Days with No Snow by Year at Weather Station USC00303033
+
+This bar plot illustrates the count of days with no recorded snowfall (snow = 0) for each year at Weather Station USC00303033. Each bar represents the total number of snowless days in a given year, with colors transitioning from purple to yellow to help differentiate the years. The x-axis displays the years, while the y-axis shows the count of days with no snow. This visualization highlights yearly patterns in snow-free days, allowing for easy comparison across multiple decades and revealing any potential trends in snow-free days over time.
+
+```{r}
+ny_noaa |> 
+  filter(snow == 0) |>
+  count(year) |> 
+  mutate(year = fct_reorder(year, n)) |> 
+  plot_ly(
+    x = ~year, y = ~n, color = ~year, type = "bar", colors = "viridis"
+  ) |>
+  layout(
+    title = "Count of Days with No Snow by Year at Weather Station USC00303033",
+    xaxis = list(title = "Year"),
+    yaxis = list(title = "Count of Days with Snow = 0")
+  )
+```
+

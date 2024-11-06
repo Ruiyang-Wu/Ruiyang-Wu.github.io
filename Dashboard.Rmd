@@ -1,0 +1,93 @@
+---
+title: "Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    source: embed
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+```
+
+```{r}
+# Data cleaning
+library(tidyverse)
+library(plotly)
+library(p8105.datasets)
+
+data("ny_noaa")
+
+ny_noaa = 
+  ny_noaa |> 
+  separate(date, into = c("year", "month", "day"), convert = TRUE) |> 
+  mutate(
+    tmax = as.numeric(tmax),
+    tmin = as.numeric(tmin),
+    prcp = as.numeric(prcp), 
+    year = as.factor(year)) |>
+  filter(id == "USC00303033")
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+plot_ly(data = ny_noaa,
+  x = ~tmax, y = ~tmin, type = "scatter", mode = "markers",
+  color = ~prcp, text = ~ny_noaa, alpha=0.5) |>
+  layout(
+    title = "Maximum and Minimum temperatures recorded at Weather Station USC00303033",
+    xaxis = list(title = "Maximum Temperature (tenths of degrees C)"),
+    yaxis = list(title = "Minimum Temperature (tenths of degrees C)")
+)
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+plot_ly(data = ny_noaa,
+    y = ~tmax, color = ~year, type = "box", colors = "viridis"
+  ) |>
+  layout(
+    title = "Maximum temperature Distribution by Year at Weather Station USC00303033",
+    yaxis = list(title = "Maximum temperature (tenths of degrees C)"),
+    xaxis = list(title = "Year")
+)
+```
+
+### Chart C
+
+```{r}
+plot_ly(data = ny_noaa,
+    y = ~tmin, color = ~year, type = "box", colors = "viridis"
+  ) |>
+  layout(
+    title = "Minimum temperature Distribution by Year at Weather Station USC00303033",
+    yaxis = list(title = "Minimum temperature (tenths of degrees C)"),
+    xaxis = list(title = "Year")
+)
+```
+
+### Chart D
+
+```{r}
+ny_noaa |> 
+  filter(snow == 0) |>
+  count(year) |> 
+  mutate(year = fct_reorder(year, n)) |> 
+  plot_ly(
+    x = ~year, y = ~n, color = ~year, type = "bar", colors = "viridis"
+  ) |>
+  layout(
+    title = "Count of Days with No Snow by Year at Weather Station USC00303033",
+    xaxis = list(title = "Year"),
+    yaxis = list(title = "Count of Days with Snow = 0")
+  )
+```
