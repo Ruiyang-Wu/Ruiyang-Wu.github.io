@@ -7,7 +7,7 @@ output:
     source: embed
 ---
 
-```{r setup, include=FALSE}
+```{r}
 library(flexdashboard)
 ```
 
@@ -62,20 +62,8 @@ plot_ly(data = ny_noaa,
 )
 ```
 
+
 ### Chart C
-
-```{r}
-plot_ly(data = ny_noaa,
-    y = ~tmin, color = ~year, type = "box", colors = "viridis"
-  ) |>
-  layout(
-    title = "Minimum temperature Distribution by Year at Weather Station USC00303033",
-    yaxis = list(title = "Minimum temperature (tenths of degrees C)"),
-    xaxis = list(title = "Year")
-)
-```
-
-### Chart D
 
 ```{r}
 ny_noaa |> 
@@ -91,3 +79,5 @@ ny_noaa |>
     yaxis = list(title = "Count of Days with Snow = 0")
   )
 ```
+
+Column {data-width=350}
